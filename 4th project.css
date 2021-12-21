@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container {
+    width: 99vw;
+    margin: 20px;
+    /* margin-right: 20px; */
+    border: 1px solid red;
+    height: 270vh;
+    display: grid;
+     grid-template-rows: 50px 400px 300px 500px 180px 200px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    /* background-image: linear-gradient(to top left, #8dd6a6 50%, #e394a3 50%);   */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.header{
+    background-color: red;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+
+}
+.right {
+    padding: 13px;
+}
+
+.right span {
+    padding: 3px 22px;
+    font-weight: 100px;
+
+}
+
+.right span:hover {
+    color: blue;
+    background-color: #f2f2f2;
+}
+.box-1{
+    background-color: aqua;
+    grid-column: 1/4;
+    padding: 50px;
+    /* margin: 22px; */
+    text-align: center;
+    /* justify-content: center; */
+     
+}
+ 
+.button {
+    
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    background-color:  rgb(255, 56, 56);
+    border: none;
+    text-decoration: none;
+    padding: 10px 24px;
+    margin: 22px 2px;
+    align-items: center;
+    /* font-family: 'Cabin', sans-serif; */
+}
+.button:hover{
+    color: blue;
+     background-color: black;
+}
+.box-2{
+    background-color: yellow;
+    grid-column: 4/7;
+}
+.box-2 img{
+    height: 350px;
+    /* width: 150px; */
+}
+.box-3{
+    background-color: burlywood;
+    grid-column: 2/6;
+    display: flex;
+}
+.image-2{
+    border: 7px solid black;
+    height: 220px;
+    width: 180px; 
+    margin: 40px; 
+}
+.image-2 img {
+    height: 220px;
+    width: 180px;
+    /* border-radius: 50%; */
+    background-color: white;
+    /* margin: 40px; */
+    
+}
+.text-2{
+    border: 2px solid red;
+    margin: 40px;
+}
+.box-4{
+    background-color: greenyellow;
+    grid-column: 1/-1;
+}
+.text-3{
+    margin: 50px;
+     
+}
+.card{
+    display: flex;
+    justify-content: space-evenly; 
+
+}
+.card-1{
+    border: 1px solid red;
+     height: 250px;
+    width: 250px;
+    text-align: center;
+}
+.box-5{
+    background-color: black;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.box-5 h2{
+    text-decoration: underline;
+    color: white;
+    padding: 30px;
+}
+.box-6{
+    background-color: chocolate;
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CSS FOR mobile */
+@media (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+    .container {
+        width: 99vw;
+        margin: 20px;
+        /* margin-right: 20px; */
+        border: 1px solid red;
+        height: 270vh;
+        display: grid;
+         grid-template-rows: 50px 400px 400px 400px 1000px 180px 200px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        /* background-image: linear-gradient(to top left, #8dd6a6 50%, #e394a3 50%);   */
+        /* text-align: center; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .header{
+        background-color: red;
+        grid-column: 1/-1;
+    }
+    .box-1{
+        background-color: aqua;
+        grid-column: 1/-1;
+    }
+    .box-2{
+        background-color: yellow;
+        grid-column: 1/-1;
+    }
+    .box-3{
+        background-color: burlywood;
+        grid-column: 1/-1;
+        /* display: flex; */
+    }
+    .box-4{
+        background-color: greenyellow;
+        grid-column: 1/-1;
+    }
+    .box-5{
+        background-color: black;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .box-6{
+        background-color: chocolate;
+        grid-column: 1/-1;
+        text-align: center;
+        /* padding: 20px; */
+    }
+    .card{
+         display: block;
+          
+    }
+    
+} 
